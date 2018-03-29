@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sudoku </title>
+    </head>
+    <body>
+        <style type="text/css">
+            img {
+                position: absolute; 
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+            }
+            table, tr, td {
+                border: 1px solid white;
+                border-collapse: collapse;
+                padding: 15px;
+                right: 50%;
+                color: #ffffff;
+            }
+        </style>
+        <div>
+        <img src="bokeh.jpg">
+        <table id="grid">
+            <colgroup>
+                <col span="2" style="border-right: 1px solid white">
+                <col style="border-right: 2px solid white">
+                <col span="2" style="border-right: 1px solid white">
+                <col style="border-right: 2px solid white">
+            </colgroup>
+            <tr id="h1">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="h2">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="h3" style="border-bottom: 2px solid white">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="h4">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="h5">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="h6" style="border-bottom: 2px solid white">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="h7">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="h8">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="h9">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        </div>
+        <script type="text/javascript" src="sudoku.js"></script>
+    </body>
+</html>

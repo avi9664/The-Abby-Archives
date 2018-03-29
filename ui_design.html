@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UI Generator</title>
+    <link rel="stylesheet" type="text/css" href="ui_design.css">
+</head>
+
+<body>
+    <ul id="menu">
+        <li>button</li>
+        <li>checkbox</li>
+        <li>radio</li>
+        <li>dropdown</li>
+    </ul>
+    <div id="accordion">
+        <div><p>Box</p></div>
+        <div class="panel no-display">
+            top padding: <input type="number" id="top-padding" min="0" style="display:block;"> right padding: <input type="number" id="right-padding" min="0" style="display:block;"> bottom padding: <input type="number" id="bottom-padding" min="0" style="display:block;">            left padding: <input type="number" id="left-padding" min="0" style="display:block;"> <br> <br>
+            <input type="checkbox" id="drop-check" /> background shadow: <br> <br> color: <br> <input type="color" id="drop-color" /> <input type="text" id="drop-hex" value="#000000" pattern="#+[A-Fa-f0-9]{6}" title="hexadecimal"> <br> <br> x-offset:
+            <br>
+            <input type="number" name="" /> <br> <br> y-offset: <br>
+            <input type="number" name="" /> <br>
+
+        </div>
+
+        <div><p>Background</p></div>
+        <div class="panel no-display">
+            background color: <br>
+            <input type="radio" id="solid" value="solid"> solid <br>
+            <input type="radio" id="gradient" value="gradient" checked> gradient <br>
+            <p id="start-txt">start color: </p>
+            <input type="color" id="start-color">
+            <input type="text" id="start-hex" value="#000000" pattern="#+[A-Fa-f0-9]{6}" title="hexadecimal"> <br>
+            <p id="end-txt">end color: </p>
+            <input type="color" id="end-color">
+            <input type="text" id="end-hex" value="#000000" pattern="#+[A-Fa-f0-9]{6}" title="hexadecimal">
+        </div>
+
+        <div><p>Text</p></div>
+        <div class="panel no-display">
+            font: <br>
+            <select></select> <br> <br> color: <br>
+            <input type="color" id="text-color">
+            <input type="text" id="text-hex" value="#000000" class="start-content" pattern="#+[A-Fa-f0-9]{6}" title="hexadecimal"> <br> <br> size: <br>
+            <input type="number" id="text-size" /> <br> <br> text: <br>
+            <input type="text" id="val" /> <br> <br>
+        </div>
+
+        <div><p>Border</p></div>
+        <div class="panel no-display">
+            width: <input type="number" id="width" min="1" style="display:block;"> height: <input type="number" id="height" min="1" style="display:block;">
+        </div>
+    </div>
+
+
+    <div id="preview">
+        <input type="button" id="preview-btn" value="preview" />
+    </div>
+
+
+    <!--<script type="text/javascript" src="ui_design.js"></script>-->
+</body>
+
+</html>

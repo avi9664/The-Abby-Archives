@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> cipher </title>
+        <style>
+            img {
+                display : none;
+            }
+               
+            html, body {
+                height: 100%;
+                font-family: Monaco, monospace;
+                background: linear-gradient(#007a36,#000000);
+                background-repeat: no-repeat;
+            }
+
+            p {
+                color: #ffffff;
+                margin: 0;
+                padding: 0;
+            }
+            input, button, #button {
+                font-family: Monaco, monospace;
+                background: #3498db;
+                background-image: linear-gradient(to bottom, #00ff72, #00af4e);
+                color: #ffffff;
+                border-radius: 28px;
+                padding: 5px 5px 5px 5px;
+                text-decoration: none;
+                border-style: none;
+            }
+            
+            input, button, #button:hover {
+                background: #00ff72;
+                background-image: linear-gradient(to bottom, #00af4e, #00ff72);
+                color: #ffffff;
+            }
+            
+            a, #modeButton {
+                font-family: Monaco, monospace;
+                background: #00c914;
+                background-image: linear-gradient(to bottom, #00c914, #007f0c);
+                color: #ffffff;
+                font-size: 13px;
+                border-radius: 28px;
+                padding: 5px 5px 5px 5px;
+                text-decoration: none;
+                border-style: none;
+            }
+            
+            a:hover, #modeButton {
+                background: #00ff72;
+                background-image: linear-gradient(to bottom, #007f0c, #00c914);
+                color: #ffffff;
+            }
+            
+            a:target, #modeButton {
+                background-image: linear-gradient(to bottom, #00c914, #00ea16);
+                color: #70ff7d;
+            }
+            
+            input, text, #message {
+                font-family: Monaco, monospace;
+                background: #ffffff;
+                color: #000000;
+                border-radius: 28px;
+                padding: 5px 5px 5px 5px;
+                text-decoration: none;
+                border-style: none;
+                word-wrap: break-word;
+                flex-wrap: wrap;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p>encrypt your messages!</p>
+        <p>pick a cipher:</p>
+        <a href='#atbash' id='modebutton'>atbash</a>
+        <a href='#atbash' id='modebutton'>caesar</a>
+        <a href='#atbash' id='modebutton'>vigenere</a>
+        <p>type your message here:</p>
+        <input type="text" id="message">
+        <input type="button" value="cipher!" id="button">
+        <br><br>
+        <p id="display"> meep </p>
+        <script type="text/javascript" src="cipher.js"></script>
+    </body>
+</html>
