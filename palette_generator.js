@@ -21,7 +21,7 @@ var adjustDiv = document.getElementById("adjust");
 var command = document.getElementById("command");
 var aboutBtn = document.getElementById("about-btn");
 var aboutColorDiv = document.getElementById("color-description");
-var optionsArr = ["optimistic", "melancholy", "aggressive", "anxious", "bitter", "calm"];
+var optionsArr = ["happy/optimistic", "melancholy", "aggressive", "bitter", "calm"]; //add "anxious" later
 var options = [];
 var selectionArr = [];
 var rangeArr = [
@@ -48,7 +48,7 @@ var colorSelection = [
     new PersonalityColor("optimistic", [50, 180], [70, 90], [45, 65]),
     new PersonalityColor("melancholy", [200, 290], [0, 50], [0, 40]),
     new PersonalityColor("aggressive", [0, 20], [60, 90], [30, 50]),
-    new PersonalityColor("anxious", [0, 30], [0, 60], [0, 50]),
+    // new PersonalityColor("anxious", [0, 30], [0, 60], [0, 50]),
     new PersonalityColor("bitter", [60, 140], [0, 100], [0, 30]),
     new PersonalityColor("calm", [120, 270], [30, 50], [30, 80]),
 ];

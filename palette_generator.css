@@ -156,7 +156,7 @@ label {
     font-family: Roboto, sans-serif;
     padding: 0;
     margin: auto;
-    display: block;
+    display: none;
     border: none;
     background: none;
 }
