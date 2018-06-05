@@ -1,0 +1,173 @@
+html,
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#results div {
+    /*position: relative;*/
+    /*border: 2px solid green;*/
+    display: block;
+}
+
+.swatch-row {
+    width: 100%;
+}
+
+.swatch-row div {
+    float: left;
+    display: block;
+    width: 14%;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 50px 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.blue-button {
+    font-family: Roboto, sans-serif;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #3b80ef;
+    color: #fff;
+}
+
+/*.radio {*/
+
+/*    position: absolute;*/
+
+/*    height: 20px;*/
+
+/*    width: 20px;*/
+
+/*    background-color: #eee;*/
+
+/*    border-radius: 10%;*/
+
+/*    padding: 5px 0;*/
+
+/*    content: "kasdfsdf";*/
+
+/*}*/
+
+radio {
+    padding: 5px 0;
+    /*display: none;*/
+}
+
+/*.radio:hover {*/
+
+/*    background-color: #00f;*/
+
+/*}*/
+
+/*.radio:active {*/
+
+/*    background-color: #00f;*/
+
+/*}*/
+
+label {
+    line-height: 1.5;
+}
+
+#explanation {
+    display: inline-block;
+}
+
+.checkboxes {
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    -moz-transition: opacity 600ms, visibility 600ms;
+    -o-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider-text {
+    font-family: Roboto, sans-serif;
+    width: 10px;
+}
+
+#adjust {
+    display: none;
+}
+
+
+#bottom-part {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.bottom-parts {
+    font-family: Roboto, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    font-size: 12px;
+}
+
+.bottom-parts a {
+    text-decoration: none;
+    color: #0045b5;
+}
+
+#line {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    display: inline-block;
+}
+
+#color-description {
+    background-color: #222;
+    color: #fff;
+    padding: 1%;
+    /*opacity: 0;*/
+    /*-webkit-transition: opacity 0.4s;*/
+    /*-o-transition: opacity 0.4s;*/
+    /*-moz-transition: opacity 0.4s;*/
+    /*transition: opacity 0.4s;*/
+    /*display: none;*/
+    display: block;
+    width: 20%;
+    float: right;
+}
+
+#about-btn {
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin: auto;
+    display: block;
+    border: none;
+    background: none;
+}
+
+#about-btn:hover {
+    color: #0045b5;
+}
+
+#main {
+    float: left;
+    display: block;
+    width: 75%;
+    padding: 1%;
+}

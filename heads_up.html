@@ -1,63 +1,102 @@
 <!DOCTYPE html>
+<!--         .8.          8 888888888o   8 888888888o   8 8888888888   8 888888888o.     d888888o.  -->
+<!--        .888.         8 8888    `88. 8 8888    `88. 8 8888         8 8888    `88.  .`8888:' `88.-->
+<!--       :88888.        8 8888     `88 8 8888     `88 8 8888         8 8888     `88  8.`8888.   Y8-->
+<!--      . `88888.       8 8888     ,88 8 8888     ,88 8 8888         8 8888     ,88  `8.`8888.    -->
+<!--     .8. `88888.      8 8888.   ,88' 8 8888.   ,88' 8 888888888888 8 8888.   ,88'   `8.`8888.   -->
+<!--    .8`8. `88888.     8 8888888888   8 8888888888   8 8888         8 888888888P'     `8.`8888.  -->
+<!--   .8' `8. `88888.    8 8888    `88. 8 8888    `88. 8 8888         8 8888`8b          `8.`8888. -->
+<!--  .8'   `8. `88888.   8 8888      88 8 8888      88 8 8888         8 8888 `8b.    8b   `8.`8888.-->
+<!-- .888888888. `88888.  8 8888    ,88' 8 8888    ,88' 8 8888         8 8888   `8b.  `8b.  ;8.`8888-->
+<!--.8'       `8. `88888. 8 888888888P   8 888888888P   8 888888888888 8 8888     `88. `Y8888P ,88P'-->
 <html>
-    <head>
-        <title> heads up!</title>
-        <style>
-            img {
-                display : none;
-            }
-            
-            html, body {
-                height: 100%;
-                font-family: Courier, sans-serif;
-                background: linear-gradient(#0a63ff, #669eff);
-                background-repeat: no-repeat;
-            }
-            
-            p {
-                color: #ffffff;
-                margin: 0;
-                padding: 0;
-            }
-            input, button, #animals {
-                background: #3498db;
-                background-image: linear-gradient(to bottom, #00ff72, #00af4e);
-                color: #ffffff;
-                border-radius: 28px;
-                padding: 10px 20px 10px 20px;
-                text-decoration: none;
-                font-family: Courier New;
-                font-size: 20px;
-                border-style: none;
-            }
-            
-            input, button, #animals:hover {
-                background: #00ff72;
-                background-image: linear-gradient(to bottom, #00af4e, #00ff72);
-                color: #ffffff;
-            }
-            
-            input, button, #actitout {
-                background: #000000;
-                background-image: linear-gradient(to bottom, #999999, #000000);
-                color: #ffffff;
-                border-radius: 28px;
-                padding: 10px 20px 10px 20px;
-                text-decoration: none;
-                font-family: Courier New;
-                font-size: 20px;
-                border-style: none;
-            }
-            input, button, #actitout:hover {
-                background: #000000;
-                background-image: linear-gradient(to bottom, #000000, #999999);
-                color: #ffffff;
-            }
-            
-        </style>
-    </head>
-    <body>
-       <input type="button" value="animals" id="animals">
-       <input type="button" value="act it out" id="actitout">
-    </body>
+
+<head>
+    <title> heads up!</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        .word {
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            color: #fff;
+        }
+
+        #middle {
+            width: 100%;
+            height: 100%;
+            margin-top: 25%;
+        }
+
+        body {
+            background-color: #4286f4;
+        }
+
+        #timer {
+            display: none;
+        }
+
+        #correct {
+            margin-left: auto;
+            margin-right: auto;
+            float: left;
+            text-align: center;
+        }
+
+        #pass {
+            margin-left: auto;
+            margin-right: auto;
+            float: right;
+            text-align: center;
+        }
+
+        #end-list-div {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        #end-list {
+            list-style-type: none;
+            text-align: center;
+            margin: auto;
+            width: 40%;
+        }
+
+        #click {
+            display: none;
+            margin: auto;
+            width: 40%;
+        }
+        
+        #score {
+            display: none;
+            margin: auto;
+            width: 60%;
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <h2 class="word" id="timer">60</h2>
+        <div id="end-list-div">
+            <h3 id="score" class="word"></h3>
+            <h3 id="click" class="word">press r to reset</h3>
+            <ul id="end-list"></ul>
+        </div>
+        <div id="middle">
+            <div>
+                <h1 id="title" class="word">press keys 1-9 to choose a topic</h1> <br>
+                <p class="word" id="key">1. act it out <br>2. common objects<br> 3. people <br> 4. movies <br> 5. history <br> 6. fictional characters <br> 7. brands <br> 8. accents/impressions <br> 9. songs
+                </p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="heads_up.js"></script>
+</body>
+
 </html>
